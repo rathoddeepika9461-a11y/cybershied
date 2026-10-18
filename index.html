@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield - Phishing URL Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛡️ CyberShield</h1>
+            <p>Smart Phishing URL Detection System</p>
+        </header>
+
+        <main class="card">
+            <div class="input-group">
+                <input type="text" id="urlInput" placeholder="Enter URL to analyze (e.g., http://example.com)...">
+                <button id="scanBtn">Scan URL</button>
+            </div>
+
+            <div id="loading" class="hidden">Scanning URL for threats...</div>
+
+            <div id="resultCard" class="result-card hidden">
+                <h3 id="statusText"></h3>
+                <p><strong>Risk Score:</strong> <span id="scoreText"></span>/100</p>
+                <div class="warnings-box">
+                    <h4>Analysis Report:</h4>
+                    <ul id="warningsList"></ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
