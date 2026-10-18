@@ -38,4 +38,4 @@ cybershield/
 - Review the generated risk score and threat warnings.
 
 ## Author
-Developed as part of B.Tech Computer Science and Engineering (AI) coursework.
+Developed by **Deepika Rathod** as part of B.Tech Computer Science and Engineering (AI) coursework.
